@@ -1,18 +1,23 @@
 {
   "name": "portifolio",
   "private": true,
+  "homepage": "https://Gabriel-NL.github.io/Portifolio_web2",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "predeploy": "npm run build",
+    
     "deploy": "vite build && gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "link-react": "^3.0.0",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.21.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
